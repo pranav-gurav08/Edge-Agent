@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" class="dark-mode">
+<head>
+  <meta charset="utf-8">
+  <title>EdgeSec Agent</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Edge-native cybersecurity agent: scans local git repositories with Gitleaks, Trivy and SonarQube, synthesizes findings via a local LLM, and renders role-based security reports.">
+  <meta name="theme-color" content="#0a0e17">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    // Ensure theme class is applied before first paint to avoid flash-of-wrong-theme.
+    (function () {
+      try {
+        var t = localStorage.getItem('edgesec-theme') || 'dark';
+        document.documentElement.classList.add(t === 'light' ? 'light-mode' : 'dark-mode');
+      } catch (e) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+<body class="dark-mode">
+  <app-root></app-root>
+  <noscript>EdgeSec Agent requires JavaScript to run.</noscript>
+</body>
+</html>

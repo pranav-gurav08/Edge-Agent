@@ -1,0 +1,54 @@
+[
+  {
+    "Target": "/test/fixtures/target-repo/package.json",
+    "Class": "lang-pkgs",
+    "Type": "node-pkg",
+    "Vulnerabilities": [
+      {
+        "VulnerabilityID": "CVE-2020-7598",
+        "PkgName": "minimist",
+        "InstalledVersion": "1.2.5",
+        "Severity": "CRITICAL",
+        "Title": "Prototype pollution",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7598"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-28168",
+        "PkgName": "axios",
+        "InstalledVersion": "0.18.0",
+        "Severity": "HIGH",
+        "Title": "SSRF",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28168"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23337",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.20",
+        "Severity": "HIGH",
+        "Title": "Command injection in template",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23337"
+      },
+      {
+        "VulnerabilityID": "CVE-2022-23529",
+        "PkgName": "jsonwebtoken",
+        "InstalledVersion": "8.3.0",
+        "Severity": "HIGH",
+        "Title": "Insecure default algorithm",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23529"
+      }
+    ]
+  },
+  {
+    "Target": "/test/fixtures/target-repo/Dockerfile",
+    "Class": "config",
+    "Type": "dockerfile",
+    "Misconfigurations": [
+      {
+        "ID": "DS002",
+        "Title": "Image user should not be 'root'",
+        "Description": "Running container as root gives the process unnecessary privileges",
+        "Severity": "HIGH"
+      }
+    ]
+  }
+]

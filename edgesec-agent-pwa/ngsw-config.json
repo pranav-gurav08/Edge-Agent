@@ -1,0 +1,52 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app-shell",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js",
+          "/assets/icons/*"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "scan-run-api",
+      "urls": ["/api/v1/scan"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 5,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "scan-results-api",
+      "urls": ["/api/v1/scan-results*", "/api/v1/scans"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 20,
+        "maxAge": "30d"
+      }
+    },
+    {
+      "name": "health-api",
+      "urls": ["/api/v1/health"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 1,
+        "maxAge": "5m",
+        "timeout": "4s"
+      }
+    }
+  ]
+}

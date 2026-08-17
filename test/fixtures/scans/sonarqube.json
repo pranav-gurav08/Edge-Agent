@@ -1,0 +1,26 @@
+[
+  {
+    "rule": "javascript:S2068",
+    "severity": "CRITICAL",
+    "message": "Make sure this hardcoded secret is not leaked.",
+    "component": "server.js",
+    "line": 4,
+    "type": "VULNERABILITY"
+  },
+  {
+    "rule": "javascript:S3776",
+    "severity": "MEDIUM",
+    "message": "Refactor this function to reduce its Cognitive Complexity.",
+    "component": "server.js",
+    "line": 7,
+    "type": "CODE_SMELL"
+  },
+  {
+    "rule": "javascript:S5122",
+    "severity": "HIGH",
+    "message": "Make sure that command-line arguments are filtered to avoid command injection.",
+    "component": "server.js",
+    "line": 1,
+    "type": "VULNERABILITY"
+  }
+]

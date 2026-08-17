@@ -1,0 +1,34 @@
+node_modules/
+dist/
+*.log
+.env
+agent_memory_data/
+.agent_state/
+reports/
+coverage/
+test/fixtures/target-repo/node_modules/
+
+# Angular / CLI
+.angular/
+.editorconfig
+
+# Python (FastAPI backend)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo

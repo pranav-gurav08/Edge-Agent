@@ -1,0 +1,50 @@
+[
+  {
+    "RuleID": "aws-access-token",
+    "Description": "AWS Access Token",
+    "File": "/test/fixtures/target-repo/.env",
+    "StartLine": 1,
+    "Match": "AKIAIOSFODNN7EXAMPLE",
+    "Secret": "AKIAIOSFODNN7EXAMPLE"
+  },
+  {
+    "RuleID": "aws-secret-key",
+    "Description": "AWS Secret Key",
+    "File": "/test/fixtures/target-repo/.env",
+    "StartLine": 2,
+    "Match": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "Secret": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+  },
+  {
+    "RuleID": "github-pat",
+    "Description": "GitHub Personal Access Token",
+    "File": "/test/fixtures/target-repo/.env",
+    "StartLine": 3,
+    "Match": "ghp_1234567890abcdefghijklmnopqrstuvwxyz",
+    "Secret": "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
+  },
+  {
+    "RuleID": "generic-api-key",
+    "Description": "Generic API Key",
+    "File": "/test/fixtures/target-repo/.env",
+    "StartLine": 5,
+    "Match": "sk_live_4242424242424242",
+    "Secret": "sk_live_4242424242424242"
+  },
+  {
+    "RuleID": "stripe-access-token",
+    "Description": "Stripe Access Token",
+    "File": "/test/fixtures/target-repo/.env",
+    "StartLine": 6,
+    "Match": "sk_test_abcdefghijklmnopqrstuvwxyz",
+    "Secret": "sk_test_abcdefghijklmnopqrstuvwxyz"
+  },
+  {
+    "RuleID": "hardcoded-secret",
+    "Description": "Hardcoded JWT signing secret in source",
+    "File": "/test/fixtures/target-repo/server.js",
+    "StartLine": 4,
+    "Match": "hardcoded-secret-do-not-ship",
+    "Secret": "hardcoded-secret-do-not-ship"
+  }
+]

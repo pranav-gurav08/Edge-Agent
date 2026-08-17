@@ -1,0 +1,17 @@
+{
+  "name": "EdgeSec Agent",
+  "short_name": "EdgeSec",
+  "description": "Edge-native cybersecurity agent: scans local git repositories with Gitleaks, Trivy and SonarQube, synthesizes findings via a local LLM, and renders role-based security reports.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0a0e17",
+  "background_color": "#0a0e17",
+  "categories": ["security", "developer-tools"],
+  "icons": [
+    { "src": "assets/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
